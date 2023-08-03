@@ -1,0 +1,261 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+
+header{
+    position: fixed;
+    width: 98%;
+    top: 0;
+    height: 38px;
+    padding: 20px;
+    background-color: #222f3e;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
+    margin: 0;
+    color: #ecf0f1;
+}
+
+#inputItem{
+    width: 200px;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    padding: 12px;
+    border: none;
+}
+
+#recommendationBtn{
+    padding: 10px;
+    margin-left: 10px;
+    background-color:  #218c74;
+    color: #ecf0f1;
+    border: none;
+    outline: none;
+    padding: 12px;
+    min-width: 120px;
+    border-radius: 10px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+h2.search-results-heading{
+    margin-left: 20px;
+}
+#movieResults,
+#relaseYear{
+    flex: 1;
+}
+.list-container{
+    margin: 0% auto;
+    padding: 0 20px;
+}
+
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#movie-list{
+    overflow: scroll;
+    height: calc(100vh - 190px);
+    padding: 20px;
+}
+#movie-list li{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #ccc;
+}
+#movie-list li .title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.titles{
+    font-weight: 900;
+    font-size: 2rem;
+}
+#movie-list li .tagline,
+#movie-list li .genres{
+    font-size: 14px;
+    color: #666;
+}
+#movie-list li .stars i{
+    color: #f7b731 !important; 
+}
+.img{
+    height: 30vh;
+    width: 20vw;
+
+}
+.imgs{
+    height: 100%;
+    width: 100%;
+}
+#relaseDateconatiner{
+    padding: 20px;
+    margin-right: 30px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #ccc;
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+}
+.para{
+    background-color: #0000004b;
+    padding: 5px;
+    color: #f7f1e3;
+    font-size: 0.9rem;
+}
+.overview{
+    color: #a5b1c2;
+}
+
+@media(max-width: 768px){
+    .img{
+        height: 10vh;
+        width: 10vw;
+    
+    }
+}
+@media(max-width: 500px){
+    header{
+        flex-direction: column;
+        height: 40%;
+        justify-content: center;
+        text-align: center;
+       
+      padding: 0;
+      }
+      #inputItem {
+        width: 80%;
+       
+      }
+      #recommendationBtn{
+        width: 30%;
+       margin-top: 10px;
+       
+      }
+      main {
+        flex-direction: column;
+        margin-top: 30%;
+      }
+      .search-results-heading{
+    
+        text-align: center;
+    }
+    #movie-list li .title {
+        font-size: 13px;
+        font-weight: bold;
+      }
+      #movie-list li .tagline{
+        color: #666;
+      }
+      #relaseYear h2{
+        text-align: center;
+        font-size: 13px;
+      }
+      #relaseYear{
+        width: 100vw;
+      }
+      #relaseDateconatiner ul li{
+        text-align: start;
+        font-size: 10px;
+      }
+}
+
+@media(max-width: 414px){
+    main {
+        flex-direction: column;
+        margin-top: 0%;
+    }
+    #movieResults{
+        margin-top: 60%;
+    }
+    #relaseYear{
+        margin-top: 10%;
+    }
+   #relaseYear h2{
+    font-size: 1.5rem;
+   }
+}
+
+@media(max-width: 395px){
+    main {
+        flex-direction: column;
+        margin-top: 50%;
+    }
+    #movie-list li{
+        width: 100vw;
+     } 
+     #movie-list li {
+        text-align: center;
+     }
+     .img{
+        width: 70vw;
+        height: 50vh;
+     }
+    #relaseDateconatiner{
+        
+        width: 100vw;
+    }
+    #relaseDateconatiner .titles{
+        font-size: 1rem;
+    }
+    #relaseDateconatiner h4{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    #relaseDateconatiner .overview{
+        font-size: 0.7rem;
+    }
+    
+    #relaseDateconatiner .para{
+        margin-left: 5px;
+        padding: 2px;
+        font-size: 0.6rem;
+    }
+    .video{
+        height :40vh; 
+        width : 100vw;
+
+    }
+
+}
+
+  
+      @media(max-width: 291px){
+        main {
+      flex-direction: column;
+      margin-top: 0%;
+    }
+    
+ #movie-list li{
+    width: 100vw;
+ } 
+ #movie-list li {
+    text-align: center;
+ }
+ .img{
+    width: 70vw;
+    height: 50vh;
+ }
+}
+@media(max-width: 271px){
+    main {
+  flex-direction: column;
+  margin-top: 20%;
+}
+}
